@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mariane Nascimento | Psicóloga</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:300&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
@@ -27,46 +31,74 @@
 
         .background-styled {
             color: #fff;
-background-image: linear-gradient(
-  180deg,
-  hsl(43deg 56% 72%) 0%,
-  hsl(43deg 58% 70%) 11%,
-  hsl(42deg 59% 68%) 22%,
-  hsl(41deg 61% 65%) 33%,
-  hsl(40deg 63% 63%) 44%,
-  hsl(39deg 64% 61%) 56%,
-  hsl(39deg 66% 59%) 67%,
-  hsl(38deg 67% 57%) 78%,
-  hsl(37deg 68% 55%) 89%,
-  hsl(37deg 70% 53%) 100%
-);      
+            background-image: linear-gradient(
+            180deg,
+            hsl(43deg 56% 72%) 0%,
+            hsl(43deg 58% 70%) 11%,
+            hsl(42deg 59% 68%) 22%,
+            hsl(41deg 61% 65%) 33%,
+            hsl(40deg 63% 63%) 44%,
+            hsl(39deg 64% 61%) 56%,
+            hsl(39deg 66% 59%) 67%,
+            hsl(38deg 67% 57%) 78%,
+            hsl(37deg 68% 55%) 89%,
+            hsl(37deg 70% 53%) 100%
+            );      
         }
 
         .container {
             color: rgb(77, 63, 63);
         }
+        .image-container {
+            max-width: 100%; /* Set maximum width to 100% */
+            overflow: hidden; /* Hide overflow to prevent image from overflowing container */
+        }
+
+        .image-container img {
+            width: 100%; /* Set image width to 100% of its container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Remove any default inline styles */
+        }
+        .title1 {
+            color: #CCABA9;
+            font-family: "Montserrat";
+            font-weight: 600;
+        }
+
     </style>
 </head>
 <body>
-    <header class="header background-styled">
-        <img src="mariane2.png" alt="Foto da Psicóloga Mariane Nascimento" class="profile-image">
-        <br />
-        <h1> Mariane Nascimento | Psicóloga</h1>
-    </header>
+
+    <div class="jumbotron">
     <div class="container">
+        <h1>Mariane Nascimento</h1>
+        <p>Psicóloga</p>
+    </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="image-container">
+                    <img src="mariane2.png" alt="Foto da Psicóloga Mariane Nascimento" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <h2 class="mt-4 title1">QUEM SOU EU ?</h2>
+                <p>Eu sou Mariane Nascimento, especialista em saúde mental e psiquiatria. </p>
+                <p>Estou aqui para te acompanhar em sua jornada de autoconhecimento e bem-estar.</p>    
+                <p>Com uma abordagem humanista, ofereço atendimento presencial e online, criando um ambiente seguro e agradável para explorarmos juntos as questões que você enfrenta.</p>
+                <p>Agende sua consulta de forma rápida e fácil pelo WhatsApp, clicando no botão logo abaixo! </p>
+                <p>Vamos iniciar essa jornada rumo ao bem-estar e realização! Estou ansiosa para te acompanhar nesse caminho.</p>
+                <p>Sou psicóloga clínica, Pós graduada em Saúde Mental, com experiência prática em Psiquiatria.</p> 
+                <p>Estou aqui para te acompanhar em sua jornada de autoconhecimento e bem-estar.</p>
+                <p>Trabalho dentro da abordagem Fenomenologia humanista, ofereço atendimento presencial e online, criando um ambiente seguro e agradável para explorarmos juntos as questões que você enfrenta.</p> 
+            </div>
+        </div>
+
         <section>
-            <h2 class="mt-4">Quem sou eu ?</h2>
-            <p>Eu sou Mariane Nascimento, especialista em saúde mental e psiquiatria. </p>
-            <p>Estou aqui para te acompanhar em sua jornada de autoconhecimento e bem-estar.</p>    
-            <p>Com uma abordagem humanista, ofereço atendimento presencial e online, criando um ambiente seguro e agradável para explorarmos juntos as questões que você enfrenta.</p>
-            <p>Agende sua consulta de forma rápida e fácil pelo WhatsApp, clicando no botão logo abaixo! </p>
-            <p>Vamos iniciar essa jornada rumo ao bem-estar e realização! Estou ansiosa para te acompanhar nesse caminho.</p>
-
-            <p>Sou psicóloga clínica, Pós graduada em Saúde Mental, com experiência prática em Psiquiatria.</p> 
-            <p>Estou aqui para te acompanhar em sua jornada de autoconhecimento e bem-estar.</p>
-            <p>Trabalho dentro da abordagem Fenomenologia humanista, ofereço atendimento presencial e online, criando um ambiente seguro e agradável para explorarmos juntos as questões que você enfrenta.</p> 
-
-            <h2 class="mt-4">COMO FUNCIONA?</h2>
+            <h2 class="mt-4 title1">COMO FUNCIONA?</h2>
 
             <p>A psicoterapia é um espaço seguro de acolhimento e cuidado, que te possibilitará passar por um processo de autoconhecimento, crescimento, desenvolvimento pessoal, além de promover a autonomia emocional. É um processo em que você e a psicóloga caminham de mãos dadas, com responsabilidades compartilhadas, rumo a um destino comum que será definido com base nas suas prioridades e objetivos, é um contexto que requer tempo e compromisso com as mudanças. Contudo, os benefícios e melhorias podem ser notados desde o início, já que o processo de escutar-se falando, dentro de um ambiente sigiloso e seguro, com escuta ativa, sem julgamentos e muito acolhimento, proporciona alívio e autoconhecimento.</p> 
             <p>A psicoterapia é uma oportunidade de se conhecer melhor, entender suas emoções e comportamentos, e encontrar formas de lidar com os desafios da vida.</p> 
@@ -83,7 +115,7 @@ background-image: linear-gradient(
         </section>
 
         <section>
-            <h2 class="mt-4">Contato</h2>
+            <h2 class="mt-4 title1">CONTATO</h2>
             <p><strong>Mariane Nascimento</strong></p>
             <p>CRP: 06-147628</p>
             <p><i class="bi bi-envelope"></i>&nbsp; <a target="_blank" href="mailto:mari.pnascimento@hotmail.com">mari.pnascimento@hotmail.com</a></p>
