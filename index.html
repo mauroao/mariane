@@ -13,8 +13,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 
     <style>
+        :root {
+            --color1:#CCABA9;
+        }
         body {
-            background-color: #f2f2f2;
+            background-color: #d3cccc;
             font-family: "Montserrat", Sans-serif;
             font-size: 17px;
             font-weight: 400;
@@ -25,8 +28,10 @@
         }
 
         .container {
+            background-color: #f2f2f2;
             color: rgb(77, 63, 63);
             padding: 20px;
+            max-width: 1140px;
         }
 
         .image-container {
@@ -41,17 +46,21 @@
         }
 
         .title1 {
-            color: #CCABA9;
+            color: var(--color1);
             font-family: "Montserrat";
             font-weight: 600;
         }
 
         .color1 {
-            color: #CCABA9;
+            color: var(--color1);
         }
 
         .btn, .btn:hover, .btn:active, .btn:visited {
             background-color: #5d9465 !important;
+        }
+
+        .borde1 {
+            border: 2px solid var(--color1);
         }
 
     </style>
@@ -68,13 +77,13 @@
         <br />
 
         <div class="row">
-            <div class="col-lg-5">
-                <div class="image-container">
+            <div class="col-lg-5 mb-4">
+                <div class="image-container borde1">
                     <img src="mari_photo.png" alt="Foto da Psicóloga Mariane Nascimento" class="img-fluid">
                 </div>
             </div>
             <div class="col-lg-7">
-                <h2 class="mt-4 title1">Quem sou eu?</h2>
+                <h2 class="title1">Quem sou eu?</h2>
                 <p>Eu sou Mariane Nascimento, especialista em saúde mental e psiquiatria. </p>
                 <p>Estou aqui para te acompanhar em sua jornada de autoconhecimento e bem-estar.</p>    
                 <p>Com uma abordagem humanista, ofereço atendimento presencial e online, criando um ambiente seguro e agradável para explorarmos juntos as questões que você enfrenta.</p>
@@ -112,8 +121,8 @@
             <p>Agende a sua consulta de forma rápida e fácil, consulte os meios de comunicação no site clicando no botão logo abaixo!</p> 
         </section>
 
-        <section>
-            <h2 class="mt-4 title1">Contato</h2>
+        <section class="borde1 p-4">
+            <h2 class="title1">Contato</h2>
             <p><i class="bi bi-envelope"></i>&nbsp; <a target="_blank" href="mailto:mari.pnascimento@hotmail.com">mari.pnascimento@hotmail.com</a></p>
             <p><i class="bi bi-instagram"></i>&nbsp; <a target="_blank" href="https://www.instagram.com/psi_.marianne/">@psi_.marianne</a></p>
             <p><i class="bi bi-linkedin"></i>&nbsp; <a target="_blank" href="https://www.linkedin.com/in/mariane-nascimento-924633111/">mariane-nascimento</a></p>
@@ -125,6 +134,17 @@
                 </button>
             </div>
 
+        </section>
+        <section>
+            <h2 class="mt-4 title1">Endereço</h2>
+            <div class="borde1">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7096787806813!2d-46.648203824513324!3d-23.578868262235943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce599190c18067%3A0xde0cbe15864459ac!2sR.%20Estela%2C%20515%20-%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004011-002!5e0!3m2!1spt-BR!2sbr!4v1719614899253!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <p class="mt-1">
+                Rua Estela, 515 Cj. 181 - 18º - Bloco E<br />
+                Vila Mariana - Metrô Paraíso<br />
+                São Paulo - SP<br />
+            </p>
         </section>
 
     </div>
